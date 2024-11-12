@@ -1,0 +1,7 @@
+.Store{
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    background-color: #282828;
+    overflow: hidden;
+}
