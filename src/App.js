@@ -8,7 +8,7 @@ import Reasons from './components/Reasons/Reasons';
 import Testimonials from './components/Testimonials/Testimonials';
 import Home from './pages/Home/Home';
 import React, { useEffect } from 'react';
-import { Routes, Route, BrowserRouter, useLocation}  from "react-router-dom";
+import { HashRouter, Routes, Route, BrowserRouter, useLocation } from "react-router-dom";
 import Store from './pages/Store/Store';
 import Signup from './components/Signup/Signup';
 
@@ -20,13 +20,13 @@ function App() {
 
   return (
     <div className="App">
-      <BrowserRouter>
-      <Routes>
-        <Route   path='/' element={<Home />} />
-        <Route path='/store' element={<Store />}/>
-        <Route path='/SignUp' element={<Signup />}/>
-      </Routes>
-      </BrowserRouter>
+      <HashRouter>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/store' element={<Store />} />
+          <Route path='/SignUp' element={<Signup />} />
+        </Routes>
+      </HashRouter>
     </div>
   );
 }
