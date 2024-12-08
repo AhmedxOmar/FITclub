@@ -1,5 +1,5 @@
 {
-  "homepage": "https://AhmedxOmar.github.io",
+  "homepage": "/",
   "name": "fitclub",
   "version": "0.1.0",
   "private": true,
@@ -8,6 +8,7 @@
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
+    "@vercel/speed-insights": "^1.1.0",
     "axios": "^1.6.8",
     "emailjs": "^4.0.0",
     "framer-motion": "^11.1.7",
@@ -23,7 +24,6 @@
   },
   "scripts": {
     "predeploy": "yarn build",
-    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -46,8 +46,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "gh-pages": "^6.2.0"
   }
 }
