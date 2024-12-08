@@ -20,13 +20,13 @@ function App() {
 
   return (
     <div className="App">
-      <HashRouter>
+      <BrowserRouter basename='fitClub'>
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/store' element={<Store />} />
           <Route path='/SignUp' element={<Signup />} />
         </Routes>
-      </HashRouter>
+      </BrowserRouter>
     </div>
   );
 }
