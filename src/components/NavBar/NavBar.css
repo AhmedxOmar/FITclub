@@ -1,0 +1,51 @@
+.nav{
+    display: flex;
+    background-color: #282828;
+    color: white;
+    justify-content: space-between;
+}
+
+.leftNav img{
+    width: 200px;
+    padding-top: 1rem;
+    padding-left: 1rem;
+}
+
+.rightNav{
+    position: relative;
+    display: flex;
+    gap: 2rem;
+    align-self: center;
+    left: -35px;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+.rightNav >div{
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+
+.rightNav> div>:nth-of-type(1){
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+
+.navButtons{
+    font-family: "Dosis";
+}
+
+
+
+
+

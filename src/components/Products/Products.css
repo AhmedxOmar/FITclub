@@ -1,0 +1,74 @@
+.store-container {
+    display: grid;
+    grid-template-columns: repeat(4, 237px);
+    grid-template-rows: repeat(2, 363px);
+    grid-column-gap: 150px;
+    grid-row-gap: 111px;
+    justify-content: center;
+}
+
+.product{
+    display: flex;
+    flex-direction: column;
+}
+.product_img {
+    width: 237px;
+    border-radius: 40px;
+    border-bottom-right-radius: 2px;
+    padding-bottom: 14px;
+    transition: 0.3s ease-in-out;
+}
+.product_img:hover{
+    opacity: 0.8;
+    transform: scale(1.02);
+}
+
+.product_title{
+    color: white;
+    font-family: "Dosis";
+    font-size: 15px;
+    font-weight:  500;
+    text-align: center;
+}
+
+.cart_button{
+    align-self: center;
+    position: relative;
+    display: flex;
+    text-transform: uppercase;
+    background-color: white;
+    border-radius: 28px;
+    height: 39px;
+    width: 216px;
+    align-items: center;
+    font-size: 16px;
+    font-family: "Dosis", sans-serif;
+    justify-content: space-between;
+    cursor: pointer;
+    top: 18px;
+    transition: 0.25s ease-in-out;
+}
+
+.cart_button:hover{
+    background-color: rgb(44, 43, 42);
+    color: white;
+    text-shadow: 2px 2px rgb(78, 73, 73);
+    box-shadow: 1.5px 1.5px 0px 0px rgba(226, 219, 219, 0.75);
+
+}
+
+
+.cart_button span{
+    font-family: "Dosis", sans-serif;
+    font-weight: bold;
+}
+.cart_button span:nth-of-type(1){
+    position: relative;
+    left: 15px;
+    padding-right: 2rem;
+}
+
+.cart_button span:nth-of-type(2){
+    position: relative;
+    right: 20px;
+}

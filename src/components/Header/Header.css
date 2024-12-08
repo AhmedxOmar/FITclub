@@ -1,0 +1,76 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    height: 3rem;
+    width: 10rem;
+}
+
+.header-menu{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    color: #fff;
+    transition: 0.3s ease-in-out;   
+    cursor: pointer; 
+
+}
+
+.header-menu >li{
+    border-bottom: 1px solid transparent;
+    border-width: 1px;
+    border-radius: 4px;
+
+}
+
+.lastLink>:nth-child(1){
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    color: #fff;
+    transition: 0.3s ease-in-out;   
+    cursor: pointer; 
+    text-decoration: none;
+}
+
+.lastLink>:nth-child(1):hover{
+    cursor: pointer;
+    color: #03b0e5;
+    transition: 0.3s ease-in-out;
+}
+
+.header-menu >li:hover{
+    cursor: pointer;
+    color: #03b0e5;
+    transition: 0.3s ease-in-out;
+    border-bottom: 1px solid #03b0e5;
+}
+
+
+@media screen and (max-width: 768px) {
+    .header>:nth-child(2){
+        position: fixed;
+        right: 2rem;
+    }
+    .header-menu{
+        flex-direction: column;
+        background-color: var(--appColor);
+        padding: 2rem;
+        z-index: 1;
+        width: 17.5rem;
+    }
+
+    .menu-icon>img{
+        width: 2rem;
+    }
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+}

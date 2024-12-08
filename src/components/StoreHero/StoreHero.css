@@ -1,0 +1,13 @@
+.store-hero{
+    background-color: #282828;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 60px;
+}
+
+.store-hero img{
+    width: 96.7%;
+    border-radius: 12px;
+    height: 333px;
+    object-fit: cover;
+}

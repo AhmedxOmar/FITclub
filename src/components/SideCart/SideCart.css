@@ -1,0 +1,116 @@
+.sideCart{
+    transition: right 0.3s ease-in-out;
+    top: 0;
+    right: 0;
+    position: fixed;
+    height: 100% !important;
+    width: 30%;
+    background-color: #434141;
+    z-index: 4;
+    font-family: "Dosis";
+    display: flex;
+    flex-direction: column;
+
+}
+
+.productInfo >svg{
+    width: 25px;
+    transition: 0.1s ease-in-out;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+.productInfo >svg:hover{
+    fill: rgb(190, 67, 67);
+    position: relative;
+    transform: translateY(3%);
+}
+
+.productItem{
+    display: flex;
+    flex-direction: row;
+    padding: 1.5rem;
+    gap: 1rem;
+}
+
+.cartContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.sideCart >h3{
+    color: white;
+}
+
+.productImage{
+    width: 150px;
+}
+
+.productInfo{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.productTitle{
+    font-family: "Dosis";
+    font-weight: lighter;
+
+}
+
+.productPrice{
+    top: 0.4rem;
+    position: relative;
+    font-family: "Dosis";
+    font-weight: bolder;
+}
+span.itemsNumbers{
+    color: black;
+    font-family: "Inter";
+    font-size: 1.5rem;
+    align-self: center;
+    font-weight: 700;
+}
+
+.closeSideCartSection{
+    height: 4.5rem;
+    background-color: white;
+    display: flex;
+    gap: 7rem;
+    padding: 0 1rem 0 1rem;
+}
+
+.closeSideCartSection>svg{
+    align-self: center;
+    cursor: pointer;
+    
+}
+
+.countter{
+    display: flex;
+    background-color: #434141;
+    gap: 1rem;
+    position: relative;
+    top: 1rem;
+}
+
+.itemsCounter{
+    border: 1px solid #9F9F9F;
+    border-radius: 9px;
+    top: 0.1rem;
+    position: relative;
+    display: flex;
+    gap: 1rem;
+    padding: 0.3rem;
+}
+
+.itemsCounter>span:nth-of-type(1), .itemsCounter>span:nth-of-type(3){
+    cursor: pointer;
+}

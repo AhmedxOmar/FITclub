@@ -1,0 +1,66 @@
+.join{
+    display: flex;
+    gap: 10rem;
+    padding: 0 2rem;
+}
+
+.left-j{
+    position: relative;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.left-j>hr{
+    width: 10rem;
+    position: absolute;
+    top: -1.9rem;
+    left: 0.2rem;
+    height: 2px;
+    background: #fff;
+    border: none;
+}
+
+.rdySpan{
+    background: linear-gradient(219deg, rgba(255, 143, 40, 1) 13%, rgba(255, 228, 35, 1) 60%, rgba(255, 231, 35, 1) 119%);    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: border;
+}
+
+.left-j>div{
+    display: flex;
+    gap: 1rem;
+}
+
+.right-j{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.location>iframe{
+    width: 240%;
+    height: 500px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .join{
+        flex-direction: column;
+    }
+    .left-j{
+        font-size: x-large;
+        text-align: center;
+        align-self: center;
+    }
+    .location>iframe{
+        position: relative;
+        align-self: center;
+        right: 0.8rem;
+        width: 110%;
+        height: 300px;
+    }
+
+}
